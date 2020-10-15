@@ -1,11 +1,11 @@
-let i = 0
-let j = 1
+let F0 = 0
+let F1 = 1
 function getFibonacci(num){
-    let fib = i + j
-    if(num <= 2) return fib
-    i = j
-    j = fib
+    let Fn = F0 + F1
+    if(num <= 2) return Fn
+    F0 = F1
+    F1 = Fn
     return getFibonacci(num-1)
 }
 
-console.log(getFibonacci(1))
+console.log(getFibonacci(10))
